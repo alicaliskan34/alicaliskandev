@@ -6,14 +6,31 @@ let content = document.querySelector(".content");
 menuButton.addEventListener("click", () => {
 
     if (menuButton.innerHTML === `<i class="fa-solid fa-bars"></i>`) {
-        menuButton.innerHTML = `<i class="fa-solid fa-x"></i>`;
-        content.style.transform = "translateX(-5000px)"
-        navbar.style.transform = "translateX(0px)";
+        menuButton.style.msTransform = "rotate(90deg)";
+        menuButton.style.transform = "scale(0.1)";
+        setTimeout(() => {
+            menuButton.innerHTML = `<i class="fa-solid fa-x"></i>`;
+            content.style.transform = "translateX(-5000px)"
+            navbar.style.transform = "translateX(0px)";
+        }, 100);
+        setTimeout(() => {
+            menuButton.style.transform = "scale(1)";
+        }, 300);
+
 
     } else if (menuButton.innerHTML === `<i class="fa-solid fa-x"></i>`) {
-        menuButton.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-        navbar.style.transform = "translateX(-5000px)"
-        content.style.transform = "translateX(0px)"
+
+        menuButton.style.transform = "scale(0.1)";
+        setTimeout(() => {
+            menuButton.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+            navbar.style.transform = "translateX(-5000px)"
+            content.style.transform = "translateX(0px)"
+        }, 100);
+        setTimeout(() => {
+            menuButton.style.transform = "scale(1)";
+        }, 300);
+
+
 
     }
 
@@ -29,14 +46,14 @@ window.addEventListener("resize", () => {
     }
 });
 
-window.onload = function() {
+window.onload = function () {
     var navbar = document.querySelector('.navbar');
     if (window.innerWidth <= 650) {
         navbar.style.transform = 'translateX(-5000px)';
     }
 };
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
     var navbar = document.querySelector('.navbar');
     if (window.innerWidth <= 650) {
         navbar.style.transform = 'translateX(-5000px)';
