@@ -1,0 +1,48 @@
+.iletisimHeader{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #32445a;
+}
+
+.socialBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social{
+    font-size: 1.3rem;
+}
+
+.iletisimBox{
+    width: 70%;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+    border-radius: 10px;
+
+}
+
+@media only screen and (max-width: 1348px) {
+   
+    
+
+
+  }
+
+  @media only screen and (max-width: 810px) {
+    
+   
+
+
+  }
+
+  @media only screen and (max-width: 650px) {
+    
+   .socialBox{
+    flex-direction: column;
+   }
+   .iletisimBox{
+    width: 80%;
+   }
+      }
+    

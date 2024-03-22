@@ -1,0 +1,79 @@
+.deneyimBox {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-wrap: wrap;
+}
+
+.deneyimHeader {
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.deneyimContent {
+    width: 100%;
+}
+
+.deneyimSection {
+    display: flex;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid #ECF1F6;
+}
+
+.deneyimBorderless{
+    border: none;
+}
+
+.deneyimLogo {
+    width: 50px;
+}
+
+.deneyimText {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.deneyimFirma {
+    color: #666666;
+}
+
+.deneyimSure {
+    color: #666666;
+}
+
+
+@media only screen and (max-width: 1348px) {
+   
+    .deneyimBox{
+        width: 70%;
+       }
+
+
+  }
+
+  @media only screen and (max-width: 810px) {
+    
+    .deneyimBox{
+        width: 90%;
+       }
+
+
+  }
+
+  @media only screen and (max-width: 650px) {
+    
+   .deneyimBox{
+    width: 90%;
+   }
+    
+      }
+    

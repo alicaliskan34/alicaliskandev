@@ -1,0 +1,58 @@
+.projeBox{
+    width: 70%;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-wrap: wrap;
+
+}
+
+.projeText{
+    width: 40%;
+}
+
+.projeImg{
+    width: 400px;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.projeHeader{
+    text-decoration: none;
+    font-size: 25px;
+    color: #32445A;
+}
+
+
+
+
+@media only screen and (max-width: 1348px) {
+    .projeText{
+        width: 100%;
+        text-align: center;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 810px) {
+    
+.projeImg{
+    width: 300px;
+}
+
+  }
+
+  @media only screen and (max-width: 650px) {
+    
+   .projeBox{
+    width: 90%;
+   }
+    
+      }
+    
